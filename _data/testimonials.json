@@ -1,0 +1,22 @@
+{
+  "testimonials": [
+    {
+      "name": "Sarah Mitchell",
+      "quote": "Kadek made our trip unforgettable. His knowledge of Bali and genuine care for our group made us feel like locals, not tourists.",
+      "rating": 5,
+      "country": "United States"
+    },
+    {
+      "name": "James & Emma Davies",
+      "quote": "Professional, safe, and incredibly informative. Worth every rupiah. We'll be booking Kadek again on our next visit.",
+      "rating": 5,
+      "country": "Australia"
+    },
+    {
+      "name": "Marco Rossi",
+      "quote": "The best tour guide in Bali. Authentic experiences, small groups, and Kadek's passion for his island is contagious.",
+      "rating": 5,
+      "country": "Italy"
+    }
+  ]
+}

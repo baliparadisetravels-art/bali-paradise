@@ -1,0 +1,172 @@
+{
+  "tours": [
+    {
+      "id": "sunrise-trek",
+      "title": "Mount Batur Sunrise Trek",
+      "duration": "11 Hours",
+      "difficulty": "Challenging",
+      "description": "Witness an unforgettable sunrise from the summit of an active volcano at 1,717 meters. Trek through volcanic landscapes, enjoy eggs cooked in natural steam, and visit a traditional coffee plantation on the way back.",
+      "image": "https://images.unsplash.com/photo-1693821876313-dc573a92028c?w=800&q=80",
+      "itinerary": [
+        { "time": "01:00-02:30", "activity": "Hotel pickup (varies by area)" },
+        { "time": "03:45 AM", "activity": "Arrive at Pura Jati Temple, safety briefing" },
+        { "time": "04:00 AM", "activity": "Begin trekking Mount Batur" },
+        { "time": "06:15 AM", "activity": "Summit — sunrise + volcanic steam eggs" },
+        { "time": "07:00 AM", "activity": "Explore the crater rim" },
+        { "time": "08:00 AM", "activity": "Descend to base" },
+        { "time": "09:30 AM", "activity": "Coffee plantation visit" },
+        { "time": "12:00 PM", "activity": "Return to hotel" }
+      ],
+      "inclusions": [
+        "Round-trip hotel transfer",
+        "Professional trekking guide",
+        "Entrance & parking fees",
+        "Breakfast",
+        "Drinking water",
+        "Flashlights",
+        "Insurance"
+      ],
+      "pricing": [
+        { "label": "Per person (min 2)", "value": "Price on Request" },
+        { "label": "Solo traveller", "value": "Contact Us" }
+      ],
+      "whatsappMessage": "Hi! I'd like to book the Sunrise Trek."
+    },
+    {
+      "id": "ubud",
+      "title": "Explore Ubud",
+      "duration": "8 Hours",
+      "difficulty": "Easy",
+      "description": "Immerse yourself in Bali's cultural heart. From playful monkeys to ancient temples, cascading rice terraces to hidden waterfalls — this tour captures the soul of Ubud in one unforgettable day.",
+      "image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
+      "itinerary": [
+        { "time": "9:00 AM", "activity": "Sacred Monkey Forest (temples & macaques)" },
+        { "time": "11:30 AM", "activity": "Tegalalang Rice Terrace (Bali Swing option)" },
+        { "time": "1:30 PM", "activity": "Coffee Plantation — Kopi Luwak tasting" },
+        { "time": "3:00 PM", "activity": "Tirta Empul Holy Water Temple" },
+        { "time": "5:00 PM", "activity": "Kanto Lampo Waterfall" }
+      ],
+      "inclusions": [
+        "Private driver",
+        "English-speaking guide",
+        "Mineral water",
+        "All entrance fees (all-inclusive)"
+      ],
+      "pricing": [
+        { "label": "Transport + Guide only (min 2 pax)", "value": "IDR 375,000" },
+        { "label": "All-Inclusive with tickets (min 2 pax)", "value": "IDR 550,000" },
+        { "label": "Solo traveller surcharge", "value": "Contact us" }
+      ],
+      "whatsappMessage": "Hi! I'd like to book the Explore Ubud tour."
+    },
+    {
+      "id": "heaven-gate",
+      "title": "Gate of Heaven",
+      "duration": "10 Hours",
+      "difficulty": "Easy",
+      "description": "Capture the iconic photo at Lempuyang Temple with Mount Agung framed perfectly behind you. Then explore royal water gardens and discover a hidden waterfall known only to locals.",
+      "image": "https://images.unsplash.com/photo-1575573330964-db3dad170190?w=800&q=80",
+      "itinerary": [
+        { "time": "Morning", "activity": "Lempuyang Temple — \"Heaven's Gate\" iconic photo" },
+        { "time": "Midday", "activity": "Tirta Gangga Royal Water Palace" },
+        { "time": "Afternoon", "activity": "Hidden Waterfall (Tukad Cepung or Kanto Lampo)" }
+      ],
+      "inclusions": [
+        "Hotel pickup & drop-off",
+        "English-speaking guide",
+        "Mineral water",
+        "All entrance fees (all-inclusive)",
+        "Customisable itinerary"
+      ],
+      "pricing": [
+        { "label": "Tour & Transport only (min 2 pax)", "value": "IDR 400,000" },
+        { "label": "All-Inclusive (min 2 pax)", "value": "IDR 750,000" }
+      ],
+      "whatsappMessage": "Hi! I'd like to book the Gate of Heaven tour."
+    },
+    {
+      "id": "rafting",
+      "title": "Ubud White Water Rafting",
+      "duration": "5 Hours",
+      "difficulty": "Moderate",
+      "description": "Feel the rush of adrenaline as you navigate rapids through Bali's stunning jungle gorges. Two hours of non-stop excitement surrounded by towering cliffs, tropical trees, and cascading waterfalls.",
+      "image": "https://images.unsplash.com/photo-1629248564797-8c5ba85da9d3?w=800&q=80",
+      "itinerary": [
+        { "time": "9:00 AM", "activity": "Hotel pickup + welcome drink" },
+        { "time": "9:15 AM", "activity": "Equipment prep & safety briefing" },
+        { "time": "10:00 AM", "activity": "Rafting begins (2 hours)" },
+        { "time": "12:30 PM", "activity": "Finish — shower & lunch" },
+        { "time": "1:30 PM", "activity": "Return to hotel" }
+      ],
+      "inclusions": [
+        "Hotel transfer",
+        "All rafting equipment",
+        "Professional guide",
+        "Lunch",
+        "Towel & shower",
+        "Waterproof bag & locker",
+        "Insurance"
+      ],
+      "pricing": [
+        { "label": "Per person (min 2 pax)", "value": "IDR 550,000" }
+      ],
+      "whatsappMessage": "Hi! I'd like to book Ubud Rafting."
+    },
+    {
+      "id": "atv",
+      "title": "ATV / Quad Bike Adventure",
+      "duration": "5 Hours",
+      "difficulty": "Moderate",
+      "description": "Rev up and ride through Bali's untouched countryside. Navigate rice paddies, bamboo forests, river crossings, and remote villages on a powerful ATV — an adrenaline rush like no other.",
+      "image": "images/atv-quad-bike.jpg",
+      "itinerary": [
+        { "time": "08:30 AM", "activity": "Hotel pickup" },
+        { "time": "09:30 AM", "activity": "Welcome drink (tea/coffee)" },
+        { "time": "09:45 AM", "activity": "Equipment & safety briefing" },
+        { "time": "10:00 AM", "activity": "ATV ride (1.5 hours through jungle & rice fields)" },
+        { "time": "11:45 AM", "activity": "Finish point" },
+        { "time": "12:00 PM", "activity": "Shower & buffet lunch" },
+        { "time": "1:00 PM", "activity": "Return to hotel" }
+      ],
+      "inclusions": [
+        "Hotel transfer",
+        "ATV vehicle & equipment",
+        "Professional guide",
+        "Buffet lunch",
+        "Towel & shower",
+        "Insurance"
+      ],
+      "pricing": [
+        { "label": "Single rider", "value": "IDR 1,200,000" },
+        { "label": "Tandem (2 on 1 ATV)", "value": "IDR 1,450,000" }
+      ],
+      "whatsappMessage": "Hi! I'd like to book the ATV adventure."
+    },
+    {
+      "id": "north-bali",
+      "title": "North Bali / UNESCO Tour",
+      "duration": "10 Hours",
+      "difficulty": "Easy",
+      "description": "Discover Bali's UNESCO World Heritage rice terraces, ancient royal temples, secret waterfalls, and authentic Luwak coffee — all in one epic day through the island's lush northern highlands.",
+      "image": "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?w=800&q=80",
+      "itinerary": [
+        { "time": "Morning", "activity": "Taman Ayun Temple (royal family temple)" },
+        { "time": "Late Morning", "activity": "Beratan Temple (lake temple)" },
+        { "time": "Midday", "activity": "Jatiluwih UNESCO Rice Terraces" },
+        { "time": "Afternoon", "activity": "Banyumala or Leke-Leke Waterfall" },
+        { "time": "Late Afternoon", "activity": "Coffee Plantation (Luwak coffee experience)" }
+      ],
+      "inclusions": [
+        "Hotel pickup & drop-off",
+        "Private English-speaking guide",
+        "Mineral water"
+      ],
+      "pricing": [
+        { "label": "Per person (min 2 pax, tickets NOT included)", "value": "IDR 375,000" },
+        { "label": "Solo traveller surcharge", "value": "+IDR 200,000" },
+        { "label": "Pickup outside Ubud", "value": "+IDR 200,000" }
+      ],
+      "whatsappMessage": "Hi! I'd like to book the North Bali UNESCO tour."
+    }
+  ]
+}

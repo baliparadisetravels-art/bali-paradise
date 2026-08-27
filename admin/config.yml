@@ -1,0 +1,130 @@
+backend:
+  name: github
+  repo: baliparadisetravels-art/bali-paradise
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  # === SITE SETTINGS ===
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "business"
+        label: "Business Details"
+        file: "_data/business.json"
+        fields:
+          - { label: "Guide Name", name: "guideName", widget: "string", default: "Kadek" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string", default: "6281999235447", hint: "Country code + number, no spaces or dashes" }
+          - { label: "Email Address", name: "email", widget: "string" }
+          - { label: "Location", name: "location", widget: "string", default: "Ubud, Bali" }
+          - { label: "Years of Experience", name: "yearsExperience", widget: "string", default: "15+" }
+          - { label: "Google Reviews URL", name: "reviewsUrl", widget: "string" }
+          - { label: "Google Rating", name: "googleRating", widget: "string", default: "4.9", hint: "e.g. 4.9 — shown on homepage and about page" }
+          - { label: "Profile Image", name: "profileImage", widget: "image" }
+          - { label: "Calendly URL", name: "calendlyUrl", widget: "string", default: "https://calendly.com/baliparadisetravels", hint: "Your Calendly booking link" }
+          - { label: "Instagram URL", name: "instagramUrl", widget: "string", required: false, hint: "Full URL e.g. https://instagram.com/yourname" }
+          - { label: "Facebook URL", name: "facebookUrl", widget: "string", required: false, hint: "Full URL e.g. https://facebook.com/yourpage" }
+          - { label: "TripAdvisor URL", name: "tripadvisorUrl", widget: "string", required: false, hint: "Full URL to your TripAdvisor listing" }
+
+  # === ABOUT PAGE ===
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about-content"
+        label: "About Page Content"
+        file: "_data/about.json"
+        fields:
+          - { label: "Heading", name: "title", widget: "string", default: "Hi, I'm Kadek One" }
+          - label: "Bio Paragraphs"
+            name: "bio"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+            hint: "Each item becomes one paragraph in the About section"
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string", hint: "e.g. 500+ or 4.9" }
+              - { label: "Label", name: "label", widget: "string", hint: "e.g. Happy Guests" }
+          - label: "Values / Promises"
+            name: "values"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+  # === TOURS ===
+  - name: "tours"
+    label: "Tours & Packages"
+    files:
+      - name: "tours-list"
+        label: "All Tours"
+        file: "_data/tours.json"
+        fields:
+          - label: "Tours"
+            name: "tours"
+            widget: "list"
+            fields:
+              - { label: "ID (URL slug)", name: "id", widget: "string", hint: "lowercase, hyphens only (e.g. mount-batur)" }
+              - { label: "Tour Name", name: "title", widget: "string" }
+              - { label: "Duration", name: "duration", widget: "string", default: "8 Hours" }
+              - { label: "Difficulty", name: "difficulty", widget: "select", options: ["Easy", "Moderate", "Challenging"] }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Tour Image", name: "image", widget: "image" }
+              - label: "Itinerary"
+                name: "itinerary"
+                widget: "list"
+                fields:
+                  - { label: "Time", name: "time", widget: "string", hint: "e.g. 9:00 AM or Morning" }
+                  - { label: "Activity", name: "activity", widget: "string" }
+              - { label: "What's Included", name: "inclusions", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+              - label: "Pricing"
+                name: "pricing"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string", hint: "e.g. Per person (min 2 pax)" }
+                  - { label: "Price", name: "value", widget: "string", hint: "e.g. IDR 375,000 or Contact Us" }
+              - { label: "WhatsApp Booking Message", name: "whatsappMessage", widget: "string", hint: "Pre-filled message when guest clicks Book" }
+
+  # === GALLERY ===
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - name: "photos"
+        label: "Gallery Photos"
+        file: "_data/gallery.json"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+              - { label: "Category", name: "category", widget: "string", hint: "Space-separated: adventures beaches people couples luxury culture" }
+
+  # === HOME PAGE CONTENT ===
+  - name: "homepage"
+    label: "Home Page"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "_data/homepage-hero.json"
+        fields:
+          - { label: "Subtitle", name: "subtitle", widget: "string", default: "Your Local Bali Expert" }
+          - { label: "Heading", name: "heading", widget: "string", default: "Experience Bali Like Never Before" }
+          - { label: "Description", name: "description", widget: "text" }
+
+      - name: "testimonials"
+        label: "Testimonials"
+        file: "_data/testimonials.json"
+        fields:
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Rating (stars)", name: "rating", widget: "number", value_type: "int", min: 1, max: 5 }
+              - { label: "Country", name: "country", widget: "string" }
