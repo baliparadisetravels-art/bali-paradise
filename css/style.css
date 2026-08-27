@@ -1722,37 +1722,3 @@ img {
         grid-template-columns: 1fr;
     }
 }
-
-/* Testimonial cards (CMS-loaded) */
-.testimonial-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius);
-    padding: 30px;
-}
-.testimonial-stars {
-    color: #fbbf24;
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-}
-.testimonial-quote {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.7;
-    margin-bottom: 16px;
-    font-style: italic;
-}
-.testimonial-author {
-    font-weight: 600;
-    color: var(--text-primary);
-    font-size: 0.9rem;
-}
-.testimonial-author span {
-    font-weight: 400;
-    color: var(--text-muted);
-}
-
-/* Tour detail even row background (CMS-loaded) */
-.tour-detail.even {
-    background: var(--bg-secondary);
-}
