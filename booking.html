@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Adventure | Bali Paradise</title>
+    <meta name="description" content="Book your private Bali tour with Kadek One. Select your preferred date and time.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Calendly Custom Styling */
+        .calendly-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .calendly-container {
+            width: 100%;
+            max-width: 100%;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .calendly-title {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .calendly-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+
+        .calendly-title p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Calendly iframe - responsive sizing */
+        .calendly-inline-widget {
+            width: 100% !important;
+            height: auto !important;
+            min-height: 100vh !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            display: block !important;
+            border-radius: 8px !important;
+        }
+
+        .calendly-inline-widget iframe {
+            width: 100% !important;
+            height: auto !important;
+            min-height: 100vh !important;
+            border-radius: 8px !important;
+            border: none !important;
+            display: block !important;
+        }
+
+        /* Desktop/Laptop - Wide monitors */
+        @media (min-width: 1200px) {
+            .calendly-wrapper {
+                max-width: 1200px;
+                margin: 40px auto;
+            }
+
+            .calendly-inline-widget {
+                min-height: 700px !important;
+            }
+
+            .calendly-inline-widget iframe {
+                min-height: 700px !important;
+            }
+        }
+
+        /* Laptop */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .calendly-wrapper {
+                max-width: 900px;
+                margin: 40px auto;
+            }
+
+            .calendly-inline-widget {
+                min-height: 750px !important;
+            }
+
+            .calendly-inline-widget iframe {
+                min-height: 750px !important;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .calendly-wrapper {
+                max-width: 750px;
+                margin: 30px auto;
+                padding: 0 15px;
+            }
+
+            .calendly-title {
+                padding: 0 15px;
+                margin-bottom: 25px;
+            }
+
+            .calendly-title h2 {
+                font-size: 1.75rem;
+            }
+
+            .calendly-inline-widget {
+                min-height: 800px !important;
+            }
+
+            .calendly-inline-widget iframe {
+                min-height: 800px !important;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .calendly-wrapper {
+                max-width: 100%;
+                margin: 20px 0;
+                padding: 0 10px;
+            }
+
+            .calendly-container {
+                padding: 0;
+            }
+
+            .calendly-title {
+                padding: 0 10px;
+                margin-bottom: 20px;
+            }
+
+            .calendly-title h2 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .calendly-title p {
+                font-size: 0.9rem;
+            }
+
+            .calendly-inline-widget {
+                min-height: 850px !important;
+            }
+
+            .calendly-inline-widget iframe {
+                min-height: 850px !important;
+            }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .calendly-wrapper {
+                margin: 15px 0;
+                padding: 0 8px;
+            }
+
+            .calendly-title {
+                padding: 0 8px;
+                margin-bottom: 15px;
+            }
+
+            .calendly-title h2 {
+                font-size: 1.3rem;
+            }
+
+            .calendly-title p {
+                font-size: 0.85rem;
+            }
+
+            .calendly-inline-widget {
+                min-height: 900px !important;
+            }
+
+            .calendly-inline-widget iframe {
+                min-height: 900px !important;
+            }
+        }
+
+        /* Booking info cards */
+        .booking-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .info-card {
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .info-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .info-card a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .info-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">BALI <span>Paradise</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="nav-cta active">Book Now</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <h1>Book Your Adventure</h1>
+            <p>Select your preferred date and time below. Confirmation arrives instantly.</p>
+        </div>
+    </div>
+
+    <!-- BOOKING SECTION -->
+    <section class="section">
+        <div class="calendly-title">
+            <h2>Choose Your Date & Time</h2>
+            <p>Pick a date that works for you. All times are in Indonesia (Jakarta) timezone. Kadek will confirm within 1 hour.</p>
+        </div>
+
+        <div class="calendly-wrapper">
+            <div class="calendly-container">
+                <!-- Calendly Embed -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/baliparadisetravels?hide_event_type_details=1&hide_gdpr_banner=1"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+            </div>
+        </div>
+
+            <!-- Info Cards -->
+            <div class="booking-info">
+                <div class="info-card fade-in">
+                    <h3>✓ No Payment Now</h3>
+                    <p>Book free. Pay your guide directly on the day of the tour. No credit card needed.</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>✓ Instant Confirmation</h3>
+                    <p>Email confirmation sent immediately after booking. Check your inbox + spam folder.</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>✓ Free Cancellation</h3>
+                    <p>Cancel for free up to 24 hours before your tour. Flexible scheduling for your trip.</p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>💬 Questions?</h3>
+                    <p>Chat with Kadek on WhatsApp: <a href="https://wa.me/6281999235447" target="_blank">+62 819 9923 5447</a></p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>📧 Email Support</h3>
+                    <p>Prefer email? Reach out: <a href="mailto:baliparadisetravels@gmail.com">baliparadisetravels@gmail.com</a></p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <h3>🎯 Tour Options</h3>
+                    <p>See all <a href="tours.html">available tours</a> and pricing. Custom tours available too.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">BALI <span>Paradise</span></a>
+                    <p>Private guided tours & adventures in Bali. Experience the island through the eyes of a local expert.</p>
+                </div>
+                <div>
+                    <h4>Tours</h4>
+                    <ul class="footer-links">
+                        <li><a href="tours.html#sunrise-trek">Sunrise Trek</a></li>
+                        <li><a href="tours.html#ubud">Explore Ubud</a></li>
+                        <li><a href="tours.html#heaven-gate">Gate of Heaven</a></li>
+                        <li><a href="tours.html#rafting">Ubud Rafting</a></li>
+                        <li><a href="tours.html#atv">ATV Adventure</a></li>
+                        <li><a href="tours.html#north-bali">North Bali</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://maps.app.goo.gl/Lucm7mpu2UtnnKXX6" target="_blank" rel="noopener">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/6281999235447" target="_blank">+62 819 9923 5447</a></li>
+                        <li><a href="mailto:baliparadisetravels@gmail.com">Email Us</a></li>
+                        <li><a href="https://maps.app.goo.gl/Lucm7mpu2UtnnKXX6" target="_blank" rel="noopener">Bali, Indonesia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bali Paradise Adventure Guide. All rights reserved. | <a href="terms.html" style="color: var(--text-muted); text-decoration: underline;">Terms & Conditions</a></p>
+                <p style="margin-top: 8px; font-size: 0.75rem; color: var(--text-muted); opacity: 0.7;">Designed &amp; Built by <a href="https://enorby.co.nz" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">ENORBY</a></p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" aria-label="TripAdvisor"><svg viewBox="0 0 24 24"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 004.04 10.43 5.976 5.976 0 004.075-1.6L12.006 24l1.928-6.387a5.976 5.976 0 004.075 1.6 5.997 5.997 0 004.04-10.43L24 6.648h-4.35a13.573 13.573 0 00-7.644-2.353zM12 6.81c1.07 0 2.12.16 3.13.464a5.993 5.993 0 00-3.13 5.222 5.994 5.994 0 00-3.13-5.222A11.142 11.142 0 0112 6.81z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281999235447?text=Hi!%20I'm%20interested%20in%20booking%20a%20tour." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/cms-loader.js"></script>
+</body>
+</html>

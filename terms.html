@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Bali Paradise Adventure Guide</title>
+    <meta name="description" content="Simple, fair booking terms and cancellation policy for Bali Paradise Adventure Guide tours.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-hero {
+            padding: 160px 0 60px;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--bg-forest), var(--bg-primary));
+        }
+        .policy-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-bottom: 40px;
+        }
+        .lang-btn {
+            padding: 12px 28px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-btn:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+        .lang-btn:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+        .lang-btn.active {
+            background: var(--accent-gold);
+            color: #000;
+            border-color: var(--accent-gold);
+        }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        .policy-section {
+            margin-bottom: 40px;
+        }
+        .policy-section h2 {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .policy-section p,
+        .policy-section li {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+        .policy-section ul {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+        .policy-section li {
+            margin-bottom: 6px;
+        }
+        .policy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .policy-table th {
+            background: var(--bg-forest);
+            color: var(--accent-gold);
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .policy-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+        .policy-table tr:last-child td {
+            border-bottom: none;
+        }
+        .highlight-box {
+            background: var(--bg-forest);
+            border: 1px solid var(--border-green);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin: 16px 0;
+        }
+        .highlight-box p {
+            color: var(--accent-green-light);
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+        .highlight-box strong {
+            color: var(--accent-gold);
+        }
+        .warning-box {
+            background: rgba(220, 53, 69, 0.08);
+            border: 1px solid rgba(220, 53, 69, 0.3);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin: 16px 0;
+        }
+        .warning-box p {
+            color: #ff8a8a;
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .page-hero { padding: 120px 0 40px; }
+            .page-hero h1 { font-size: 1.8rem; }
+            .policy-table th, .policy-table td { padding: 8px 10px; font-size: 0.8rem; }
+            .lang-btn { padding: 10px 20px; font-size: 0.82rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">BALI <span>Paradise</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="hero-subtitle" style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 12px;">Legal</p>
+            <h1>Terms & Conditions</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Simple, fair rules so we're all on the same page.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="policy-container">
+
+                <!-- LANGUAGE TOGGLE -->
+                <div class="lang-toggle">
+                    <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                    <button class="lang-btn" onclick="switchLang('id')">Bahasa Indonesia</button>
+                </div>
+
+                <!-- ========== ENGLISH VERSION ========== -->
+                <div id="lang-en" class="lang-content active">
+
+                    <div class="highlight-box" style="margin-bottom: 30px;">
+                        <p><strong>The short version:</strong> Cancel 24+ hours ahead = totally free. Follow your guide's instructions = no damage charges ever. We're fair and upfront. No tricks, no hidden fees.</p>
+                    </div>
+
+                    <!-- 1. BOOKING -->
+                    <div class="policy-section">
+                        <h2>1. Booking</h2>
+                        <ul>
+                            <li>Your booking is confirmed once we reply on WhatsApp or email with a date and time.</li>
+                            <li>Most tours: <strong>no upfront payment needed</strong>. You pay on the day.</li>
+                            <li>All prices are in Indonesian Rupiah (IDR).</li>
+                            <li>You must be 18+ to book. Kids are welcome with a parent/guardian.</li>
+                            <li>If you have a medical condition or allergy, please tell us when you book.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. WHAT'S INCLUDED -->
+                    <div class="policy-section">
+                        <h2>2. What's Included</h2>
+                        <ul>
+                            <li>Hotel pickup and drop-off</li>
+                            <li>English-speaking guide</li>
+                            <li>All equipment and safety gear</li>
+                            <li>Basic activity insurance</li>
+                            <li>Drinking water</li>
+                        </ul>
+                        <p><strong>Not included:</strong> meals (unless stated on the tour page), personal spending, tips, extra activities you add on the day.</p>
+                    </div>
+
+                    <!-- 3. CANCELLATION -->
+                    <div class="policy-section">
+                        <h2>3. Cancellation</h2>
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>When You Cancel</th>
+                                    <th>What Happens</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>24+ hours</strong> before the tour</td>
+                                    <td>100% free. No charge.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>12-24 hours</strong> before</td>
+                                    <td>50% fee</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Less than 12 hours</strong></td>
+                                    <td>Full price charged</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>No-show</strong> (you don't turn up, no message)</td>
+                                    <td>Full price + any costs we already paid out</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>Why?</strong> When you book, we lock in a guide, car, and gear just for you. If you cancel last-minute, we can't fill that spot and we've already paid our suppliers.</p>
+
+                        <p style="margin-top: 16px;"><strong>If WE cancel</strong> (bad weather, volcano alert, government closure), you get your choice of:</p>
+                        <ul>
+                            <li>Reschedule for free</li>
+                            <li>Full refund</li>
+                            <li>Credit towards another tour</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. PICKUP & NO-SHOWS -->
+                    <div class="policy-section">
+                        <h2>4. Pickup</h2>
+                        <ul>
+                            <li>We confirm your pickup time the evening before via WhatsApp.</li>
+                            <li>Please be in your hotel lobby on time.</li>
+                            <li>We'll wait <strong>15 minutes</strong>, then call you. No reply after another 10 min = no-show.</li>
+                            <li>If you're running late but message us, we'll wait up to 30 minutes.</li>
+                        </ul>
+                        <p><strong>If we're late:</strong> 30+ minutes late = 10% discount. 60+ minutes = you can cancel free.</p>
+                    </div>
+
+                    <!-- 5. DAMAGE & CLAWBACK -->
+                    <div class="policy-section">
+                        <h2>5. Equipment & Damage</h2>
+                        <p>Normal wear and tear? <strong>Never your problem.</strong> We only charge you if something is deliberately damaged or you ignore safety rules.</p>
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>What Happened</th>
+                                    <th>You Pay</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Normal use, stuff gets scratched/worn</td>
+                                    <td>Nothing</td>
+                                </tr>
+                                <tr>
+                                    <td>Broke something by being reckless</td>
+                                    <td>Repair cost (no markup)</td>
+                                </tr>
+                                <tr>
+                                    <td>Lost gear (helmet, torch, etc.)</td>
+                                    <td>Replacement cost</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV damage from going off-track</td>
+                                    <td>Up to IDR 5,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV totalled (flipped, drowned)</td>
+                                    <td>Full replacement value</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="highlight-box">
+                            <p><strong>Bottom line:</strong> Follow your guide, stay on the track, and you'll never owe a cent for damage. This only kicks in if you deliberately ignore safety rules.</p>
+                        </div>
+                        <p><strong>Maximum charge for any single incident:</strong> IDR 25,000,000. We always show you photo evidence before asking for payment.</p>
+                    </div>
+
+                    <!-- 6. BEHAVIOUR -->
+                    <div class="policy-section">
+                        <h2>6. Behaviour</h2>
+                        <p>Our guide can end the tour immediately (no refund) if you:</p>
+                        <ul>
+                            <li>Are drunk or high during an adventure activity</li>
+                            <li>Ignore safety warnings after being told twice</li>
+                            <li>Are aggressive towards anyone</li>
+                            <li>Damage sacred or cultural sites</li>
+                        </ul>
+                    </div>
+
+                    <!-- 7. SAFETY -->
+                    <div class="policy-section">
+                        <h2>7. Safety & Fitness</h2>
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>Tour</th>
+                                    <th>Fitness Needed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sunrise Trek</td>
+                                    <td>Moderate (2hr uphill walk)</td>
+                                </tr>
+                                <tr>
+                                    <td>Rafting</td>
+                                    <td>Moderate (must be able to swim)</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV</td>
+                                    <td>Moderate (need upper body strength)</td>
+                                </tr>
+                                <tr>
+                                    <td>Cultural Tours</td>
+                                    <td>Easy (walking on uneven ground)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="warning-box">
+                            <p><strong>Get your own travel insurance.</strong> We include basic activity cover, but it won't cover your phone, missed flights, or pre-existing conditions.</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. PAYMENT -->
+                    <div class="policy-section">
+                        <h2>8. Payment</h2>
+                        <ul>
+                            <li><strong>Cash IDR</strong> to your guide on the day (preferred)</li>
+                            <li><strong>Bank transfer</strong> (BCA/BRI) — details on request</li>
+                            <li><strong>Foreign cash</strong> accepted at the day's Google rate</li>
+                            <li>No credit cards directly (sorry!)</li>
+                            <li>Groups of 5+ or multi-day tours: 30% deposit may be needed</li>
+                        </ul>
+                    </div>
+
+                    <!-- 9. CULTURAL RESPECT -->
+                    <div class="policy-section">
+                        <h2>9. Respect the Culture</h2>
+                        <ul>
+                            <li><strong>Temples:</strong> Wear a sarong (we provide them). Don't climb on structures.</li>
+                            <li><strong>Offerings:</strong> Those little baskets on the ground (canang sari) are sacred. Step around them.</li>
+                            <li><strong>Nature:</strong> Don't litter. Don't feed or harass monkeys.</li>
+                            <li><strong>Temple entry:</strong> Women who are menstruating cannot enter (this is Balinese religious custom).</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10. PRIVACY -->
+                    <div class="policy-section">
+                        <h2>10. Your Data</h2>
+                        <ul>
+                            <li>We only use your contact info to manage your booking.</li>
+                            <li>We never sell your details.</li>
+                            <li>We might use anonymous tour photos on our socials. If your face is visible, we'll ask first.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 11. PROBLEMS -->
+                    <div class="policy-section">
+                        <h2>11. If Something Goes Wrong</h2>
+                        <ul>
+                            <li><strong>Step 1:</strong> Message us on WhatsApp. Most things get sorted in a day.</li>
+                            <li><strong>Step 2:</strong> If still unhappy, we sit down and talk it through (musyawarah — the Indonesian way).</li>
+                            <li><strong>Step 3:</strong> If that fails, either party can go to BPSK (Consumer Dispute Board) in Gianyar, Bali.</li>
+                        </ul>
+                        <p>These terms follow Indonesian law.</p>
+                    </div>
+
+                </div>
+
+                <!-- ========== BAHASA INDONESIA VERSION ========== -->
+                <div id="lang-id" class="lang-content">
+
+                    <div class="highlight-box" style="margin-bottom: 30px;">
+                        <p><strong>Ringkasan singkat:</strong> Batalkan 24+ jam sebelumnya = gratis sepenuhnya. Ikuti instruksi pemandu = tidak ada biaya kerusakan. Kami adil dan transparan. Tidak ada trik, tidak ada biaya tersembunyi.</p>
+                    </div>
+
+                    <!-- 1. PEMESANAN -->
+                    <div class="policy-section">
+                        <h2>1. Pemesanan</h2>
+                        <ul>
+                            <li>Pemesanan Anda dikonfirmasi setelah kami membalas via WhatsApp atau email dengan tanggal dan waktu.</li>
+                            <li>Sebagian besar tur: <strong>tidak perlu bayar di muka</strong>. Bayar di hari H.</li>
+                            <li>Semua harga dalam Rupiah Indonesia (IDR).</li>
+                            <li>Anda harus berusia 18+ untuk memesan. Anak-anak boleh ikut dengan orang tua/wali.</li>
+                            <li>Jika Anda memiliki kondisi medis atau alergi, mohon beritahu kami saat memesan.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. YANG TERMASUK -->
+                    <div class="policy-section">
+                        <h2>2. Yang Termasuk</h2>
+                        <ul>
+                            <li>Jemput dan antar ke hotel</li>
+                            <li>Pemandu berbahasa Inggris</li>
+                            <li>Semua peralatan dan perlengkapan keselamatan</li>
+                            <li>Asuransi aktivitas dasar</li>
+                            <li>Air minum</li>
+                        </ul>
+                        <p><strong>Tidak termasuk:</strong> makanan (kecuali tertera di halaman tur), pengeluaran pribadi, tip, aktivitas tambahan di hari H.</p>
+                    </div>
+
+                    <!-- 3. PEMBATALAN -->
+                    <div class="policy-section">
+                        <h2>3. Pembatalan</h2>
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>Kapan Anda Membatalkan</th>
+                                    <th>Yang Terjadi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>24+ jam</strong> sebelum tur</td>
+                                    <td>100% gratis. Tidak ada biaya.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>12-24 jam</strong> sebelum</td>
+                                    <td>Biaya 50%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Kurang dari 12 jam</strong></td>
+                                    <td>Harga penuh dikenakan</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tidak hadir</strong> (tidak datang, tidak ada pesan)</td>
+                                    <td>Harga penuh + biaya yang sudah kami keluarkan</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>Mengapa?</strong> Saat Anda memesan, kami sudah menyiapkan pemandu, mobil, dan peralatan khusus untuk Anda. Jika Anda membatalkan mendadak, kami tidak bisa mengisi slot itu dan kami sudah membayar pemasok kami.</p>
+
+                        <p style="margin-top: 16px;"><strong>Jika KAMI membatalkan</strong> (cuaca buruk, peringatan gunung berapi, penutupan pemerintah), Anda mendapat pilihan:</p>
+                        <ul>
+                            <li>Jadwal ulang gratis</li>
+                            <li>Pengembalian dana penuh</li>
+                            <li>Kredit untuk tur lain</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. PENJEMPUTAN -->
+                    <div class="policy-section">
+                        <h2>4. Penjemputan</h2>
+                        <ul>
+                            <li>Kami konfirmasi waktu jemput malam sebelumnya via WhatsApp.</li>
+                            <li>Mohon sudah siap di lobi hotel tepat waktu.</li>
+                            <li>Kami tunggu <strong>15 menit</strong>, lalu menelepon Anda. Tidak ada jawaban setelah 10 menit lagi = dianggap tidak hadir.</li>
+                            <li>Jika Anda terlambat tapi menghubungi kami, kami akan menunggu sampai 30 menit.</li>
+                        </ul>
+                        <p><strong>Jika kami terlambat:</strong> 30+ menit = diskon 10%. 60+ menit = Anda bisa membatalkan gratis.</p>
+                    </div>
+
+                    <!-- 5. KERUSAKAN -->
+                    <div class="policy-section">
+                        <h2>5. Peralatan & Kerusakan</h2>
+                        <p>Keausan normal? <strong>Bukan masalah Anda.</strong> Kami hanya mengenakan biaya jika sesuatu sengaja dirusak atau Anda mengabaikan aturan keselamatan.</p>
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>Apa yang Terjadi</th>
+                                    <th>Yang Anda Bayar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Penggunaan normal, lecet/aus</td>
+                                    <td>Tidak ada</td>
+                                </tr>
+                                <tr>
+                                    <td>Rusak karena ceroboh</td>
+                                    <td>Biaya perbaikan (tanpa markup)</td>
+                                </tr>
+                                <tr>
+                                    <td>Peralatan hilang (helm, senter, dll.)</td>
+                                    <td>Biaya penggantian</td>
+                                </tr>
+                                <tr>
+                                    <td>Kerusakan ATV karena keluar jalur</td>
+                                    <td>Sampai IDR 5.000.000</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV hancur total (terguling, tenggelam)</td>
+                                    <td>Nilai penggantian penuh</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="highlight-box">
+                            <p><strong>Intinya:</strong> Ikuti pemandu Anda, tetap di jalur, dan Anda tidak akan pernah dikenakan biaya kerusakan. Ini hanya berlaku jika Anda sengaja mengabaikan aturan keselamatan.</p>
+                        </div>
+                        <p><strong>Biaya maksimum untuk satu insiden:</strong> IDR 25.000.000. Kami selalu menunjukkan bukti foto sebelum meminta pembayaran.</p>
+                    </div>
+
+                    <!-- 6. PERILAKU -->
+                    <div class="policy-section">
+                        <h2>6. Perilaku</h2>
+                        <p>Pemandu kami dapat mengakhiri tur segera (tanpa pengembalian dana) jika Anda:</p>
+                        <ul>
+                            <li>Mabuk atau di bawah pengaruh narkoba selama aktivitas petualangan</li>
+                            <li>Mengabaikan peringatan keselamatan setelah ditegur dua kali</li>
+                            <li>Bersikap agresif terhadap siapa pun</li>
+                            <li>Merusak situs suci atau budaya</li>
+                        </ul>
+                    </div>
+
+                    <!-- 7. KESELAMATAN -->
+                    <div class="policy-section">
+                        <h2>7. Keselamatan & Kebugaran</h2>
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>Tur</th>
+                                    <th>Kebugaran yang Dibutuhkan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pendakian Matahari Terbit</td>
+                                    <td>Sedang (jalan menanjak 2 jam)</td>
+                                </tr>
+                                <tr>
+                                    <td>Arung Jeram</td>
+                                    <td>Sedang (harus bisa berenang)</td>
+                                </tr>
+                                <tr>
+                                    <td>ATV</td>
+                                    <td>Sedang (perlu kekuatan tubuh bagian atas)</td>
+                                </tr>
+                                <tr>
+                                    <td>Tur Budaya</td>
+                                    <td>Mudah (berjalan di permukaan tidak rata)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="warning-box">
+                            <p><strong>Dapatkan asuransi perjalanan Anda sendiri.</strong> Kami menyertakan perlindungan aktivitas dasar, tetapi tidak mencakup ponsel Anda, penerbangan yang terlewat, atau kondisi medis yang sudah ada.</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. PEMBAYARAN -->
+                    <div class="policy-section">
+                        <h2>8. Pembayaran</h2>
+                        <ul>
+                            <li><strong>Tunai IDR</strong> kepada pemandu di hari H (pilihan utama)</li>
+                            <li><strong>Transfer bank</strong> (BCA/BRI) — detail atas permintaan</li>
+                            <li><strong>Uang asing</strong> diterima dengan kurs Google hari itu</li>
+                            <li>Kartu kredit tidak diterima langsung (maaf!)</li>
+                            <li>Grup 5+ orang atau tur multi-hari: deposit 30% mungkin diperlukan</li>
+                        </ul>
+                    </div>
+
+                    <!-- 9. HORMATI BUDAYA -->
+                    <div class="policy-section">
+                        <h2>9. Hormati Budaya</h2>
+                        <ul>
+                            <li><strong>Pura:</strong> Kenakan sarung (kami sediakan). Jangan memanjat struktur pura.</li>
+                            <li><strong>Sesajen:</strong> Keranjang kecil di tanah (canang sari) itu suci. Langkahi dengan hati-hati.</li>
+                            <li><strong>Alam:</strong> Jangan buang sampah. Jangan memberi makan atau mengganggu monyet.</li>
+                            <li><strong>Masuk pura:</strong> Wanita yang sedang menstruasi tidak boleh masuk (ini adalah adat agama Bali).</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10. PRIVASI -->
+                    <div class="policy-section">
+                        <h2>10. Data Anda</h2>
+                        <ul>
+                            <li>Kami hanya menggunakan info kontak Anda untuk mengatur pemesanan.</li>
+                            <li>Kami tidak pernah menjual data Anda.</li>
+                            <li>Kami mungkin menggunakan foto tur anonim di media sosial kami. Jika wajah Anda terlihat, kami akan minta izin dulu.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 11. MASALAH -->
+                    <div class="policy-section">
+                        <h2>11. Jika Ada Masalah</h2>
+                        <ul>
+                            <li><strong>Langkah 1:</strong> Hubungi kami via WhatsApp. Sebagian besar masalah selesai dalam sehari.</li>
+                            <li><strong>Langkah 2:</strong> Jika masih belum puas, kita duduk bersama dan bicarakan (musyawarah).</li>
+                            <li><strong>Langkah 3:</strong> Jika gagal, bisa mengajukan ke BPSK (Badan Penyelesaian Sengketa Konsumen) di Gianyar, Bali.</li>
+                        </ul>
+                        <p>Syarat dan ketentuan ini mengikuti hukum Republik Indonesia (UU No. 8/1999 tentang Perlindungan Konsumen, UU No. 10/2009 tentang Kepariwisataan).</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">BALI <span>Paradise</span></a>
+                    <p>Private guided tours & adventures in Bali. Experience the island through the eyes of a local expert.</p>
+                </div>
+                <div>
+                    <h4>Tours</h4>
+                    <ul class="footer-links">
+                        <li><a href="tours.html#sunrise-trek">Sunrise Trek</a></li>
+                        <li><a href="tours.html#ubud">Explore Ubud</a></li>
+                        <li><a href="tours.html#heaven-gate">Gate of Heaven</a></li>
+                        <li><a href="tours.html#rafting">Ubud Rafting</a></li>
+                        <li><a href="tours.html#atv">ATV Adventure</a></li>
+                        <li><a href="tours.html#north-bali">North Bali</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://maps.app.goo.gl/Lucm7mpu2UtnnKXX6" target="_blank" rel="noopener">Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/6281999235447" target="_blank">+62 819 9923 5447</a></li>
+                        <li><a href="mailto:baliparadisetravels@gmail.com">Email Us</a></li>
+                        <li><a href="https://maps.app.goo.gl/Lucm7mpu2UtnnKXX6" target="_blank" rel="noopener">Bali, Indonesia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bali Paradise Adventure Guide. All rights reserved. | <a href="terms.html" style="color: var(--text-muted); text-decoration: underline;">Terms & Conditions</a></p>
+                <p style="margin-top: 8px; font-size: 0.75rem; color: var(--text-muted); opacity: 0.7;">Designed &amp; Built by <a href="https://enorby.co.nz" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">ENORBY</a></p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" aria-label="TripAdvisor"><svg viewBox="0 0 24 24"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 004.04 10.43 5.976 5.976 0 004.075-1.6L12.006 24l1.928-6.387a5.976 5.976 0 004.075 1.6 5.997 5.997 0 004.04-10.43L24 6.648h-4.35a13.573 13.573 0 00-7.644-2.353zM12 6.81c1.07 0 2.12.16 3.13.464a5.993 5.993 0 00-3.13 5.222 5.994 5.994 0 00-3.13-5.222A11.142 11.142 0 0112 6.81z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6281999235447?text=Hi!%20I'm%20interested%20in%20booking%20a%20tour." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/cms-loader.js"></script>
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.querySelector('[onclick="switchLang(\'' + lang + '\')"]').classList.add('active');
+            document.documentElement.lang = lang === 'id' ? 'id' : 'en';
+        }
+    </script>
+</body>
+</html>
