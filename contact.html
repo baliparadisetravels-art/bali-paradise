@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Book | Bali Paradise Adventure Guide</title>
+    <meta name="description" content="Book your Bali tour today. Contact us via WhatsApp, email, or send an enquiry. Free cancellation, no upfront payment needed.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">BALI <span>Paradise</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="hero-subtitle">Get In Touch</p>
+            <h1>Book Your Adventure</h1>
+            <p>Ready to explore Bali? Send us a message and we'll get back to you within 1 hour.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="booking-note fade-in">
+                <p><strong>No payment needed to book.</strong> Send your enquiry, we confirm availability, and you pay your guide directly on the day. Free cancellation up to 24 hours before.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- BOOKING FORM -->
+                <div class="fade-in">
+                    <h3>Send an Enquiry</h3>
+                    <form id="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Sarah Johnson" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tour">Which Tour Are You Interested In?</label>
+                            <select id="tour" name="tour">
+                                <option value="">Select a tour...</option>
+                                <option value="Sunrise Trek">Mount Batur Sunrise Trek</option>
+                                <option value="Explore Ubud">Explore Ubud</option>
+                                <option value="Gate of Heaven">Gate of Heaven</option>
+                                <option value="Ubud Rafting">Ubud White Water Rafting</option>
+                                <option value="ATV Quad Bike">ATV / Quad Bike Adventure</option>
+                                <option value="North Bali UNESCO">North Bali / UNESCO Tour</option>
+                                <option value="Custom">Custom / Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date (DD/MM/YYYY)</label>
+                                <input type="date" id="date" name="date" min="" lang="en-GB">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests">
+                                    <option value="1">1 person (solo)</option>
+                                    <option value="2" selected>2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5+">5+ people (group)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message (optional)</label>
+                            <textarea id="message" name="message" placeholder="Any questions, special requests, or hotel name for pickup..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Send Enquiry via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="fade-in">
+                    <h3>Or Contact Directly</h3>
+
+                    <div class="contact-info-cards">
+                        <a href="https://wa.me/6281999235447?text=Hi!%20I'd%20like%20to%20book%20a%20tour." target="_blank" style="text-decoration: none;">
+                            <div class="contact-card">
+                                <div class="contact-card-icon" style="background: rgba(37, 211, 102, 0.15);">
+                                    <svg viewBox="0 0 24 24" style="fill: #25D366;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>WhatsApp (Fastest)</h4>
+                                    <p style="color: var(--text-secondary);">+62 819 9923 5447</p>
+                                    <p style="color: var(--accent-green-light); font-size: 0.8rem;">Usually replies within 1 hour</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p style="color: var(--text-secondary);">baliparadisetravels@gmail.com</p>
+                                <p style="color: var(--text-muted); font-size: 0.8rem;">We'll reply within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <a href="https://maps.app.goo.gl/Lucm7mpu2UtnnKXX6" target="_blank" rel="noopener" style="text-decoration: none;">
+                            <div class="contact-card">
+                                <div class="contact-card-icon">
+                                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p style="color: var(--text-secondary);">Bali, Indonesia</p>
+                                    <p style="color: var(--accent-green-light); font-size: 0.8rem;">View on Google Maps &#8594;</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- PLACEHOLDER: Replace with real social links -->
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p style="color: var(--text-secondary);">@baliparadiseadventure</p>
+                                <p style="color: var(--text-muted); font-size: 0.8rem;">Follow for daily Bali content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAP SECTION -->
+            <div class="fade-in" style="margin-top: 50px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border-subtle);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.5!2d115.2792596!3d-8.5365121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d23a5ae390b%3A0xab5f995b750066f2!2sBali%20Paradise%20Adventure%20Guide!5e0!3m2!1sen!2sid!4v1700000000000"
+                    width="100%"
+                    height="300"
+                    style="border:0; display: block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p style="text-align: center; margin-top: 12px; font-size: 0.8rem;">
+                <a href="https://maps.app.goo.gl/Lucm7mpu2UtnnKXX6" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: underline;">Open in Google Maps</a> &mdash; see reviews, photos & directions
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bali Paradise Adventure Guide. All rights reserved. | <a href="terms.html" style="color: var(--text-muted); text-decoration: underline;">Terms & Conditions</a></p>
+                <p style="margin-top: 8px; font-size: 0.75rem; color: var(--text-muted); opacity: 0.7;">Designed &amp; Built by <a href="https://enorby.co.nz" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">ENORBY</a></p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6281999235447?text=Hi!%20I'm%20interested%20in%20booking%20a%20tour." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

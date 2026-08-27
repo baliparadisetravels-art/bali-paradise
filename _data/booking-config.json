@@ -1,0 +1,39 @@
+{
+  "whatsapp_number": "6281999235447",
+  "month": "August",
+  "year": 2026,
+  "available_dates": [5, 8, 9, 12, 13, 15, 16, 17, 19, 20, 22, 23, 26, 27, 29, 30],
+  "busy_dates": [4, 10, 14, 21],
+  "tours": [
+    {
+      "name": "Mount Batur Sunrise Trek",
+      "price": 850000,
+      "duration": "11 hours",
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "Ubud Cultural Tour",
+      "price": 375000,
+      "duration": "8 hours",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "White Water Rafting",
+      "price": 550000,
+      "duration": "3 hours",
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "ATV Adventure",
+      "price": 1200000,
+      "duration": "4 hours",
+      "difficulty": "Challenging"
+    },
+    {
+      "name": "Gates of Heaven Trek",
+      "price": 400000,
+      "duration": "6 hours",
+      "difficulty": "Moderate"
+    }
+  ]
+}
