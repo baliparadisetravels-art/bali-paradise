@@ -41,41 +41,24 @@ A fully responsive, dark-themed static website for a Bali-based private tour gui
 ## Tech Stack
 
 - **HTML5** — Semantic markup, Open Graph meta tags
-- **CSS3** — Custom properties, CSS Grid, Flexbox, 6 responsive breakpoints
-- **JavaScript** — Vanilla JS (no frameworks), IntersectionObserver for scroll animations
+- **CSS3** — Custom properties, CSS Grid, Flexbox
+- **JavaScript** — Vanilla JS (no frameworks)
 - **Fonts** — Google Fonts (DM Sans + Playfair Display)
-- **Hosting** — GitHub Pages (free, HTTPS enforced)
-- **CMS** — Decap CMS with GitHub backend
+- **Hosting** — GitHub Pages (HTTPS enforced)
 - **Booking** — Calendly embedded widget
-- **Contact** — WhatsApp Business API (click-to-chat)
+- **Contact** — WhatsApp click-to-chat
 - **Maps** — Google Maps embed
-- **Images** — Unsplash (stock) + custom photos
 
 
 ## File Structure
 
 ```
 bali-paradise/
-├── _data/                    # CMS content (JSON)
-│   ├── about.json            # About page content
-│   ├── booking-config.json   # Booking page settings
-│   ├── business.json         # Business details, contact info, social links
-│   ├── gallery.json          # 36 gallery photos with categories
-│   ├── homepage-hero.json    # Hero section text
-│   ├── testimonials.json     # Guest reviews
-│   └── tours.json            # All 6 tours with full data
-├── admin/                    # CMS dashboard
-│   ├── config.yml            # Decap CMS configuration
-│   └── index.html            # CMS login page
-├── css/
-│   └── style.css             # All styles (1,725 lines, fully responsive)
-├── images/
-│   ├── atv-quad-bike.jpg     # ATV tour photo
-│   └── guide-kadek.jpg       # Guide profile photo
-├── js/
-│   ├── cms-loader.js         # Loads JSON data into pages dynamically
-│   └── main.js               # Navigation, scroll animations, mobile menu
-├── .nojekyll                 # Tells GitHub Pages to skip Jekyll processing
+├── _data/          # Content data (JSON)
+├── admin/          # CMS dashboard (OAuth-protected)
+├── css/            # Styles (fully responsive)
+├── images/         # Tour and profile photos
+├── js/             # Navigation, animations, content loader
 ├── about.html
 ├── booking.html
 ├── contact.html
@@ -88,79 +71,37 @@ bali-paradise/
 
 ## CMS (Content Management)
 
-The site uses [Decap CMS](https://decapcms.org/) (formerly Netlify CMS) so the client can edit content without touching code.
+The site includes a headless CMS so the client can edit content without touching code.
 
-**Admin panel:** `https://baliparadisetravels-art.github.io/bali-paradise/admin/`
+### What's editable:
 
-### What's editable via CMS:
+- Business details and contact info
+- About page content
+- Tours (add/edit/delete)
+- Gallery photos
+- Homepage hero and testimonials
+- Booking settings
 
-- **Business Details** — Guide name, WhatsApp, email, Google rating, Calendly URL, social links
-- **About Page** — Bio paragraphs, stats, values/promises
-- **Tours** — Add/edit/delete tours, itineraries, inclusions, pricing
-- **Gallery** — Add/remove/reorder photos, captions, categories
-- **Homepage** — Hero text, testimonials
-- **Booking** — Calendar settings
-
-### CMS Setup Requirements:
-
-1. GitHub OAuth App (for authentication)
-2. Netlify account (free — provides OAuth bridge only, not hosting)
-3. See `Docs_Reference/DECAP-CMS-SETUP-INSTRUCTIONS.txt` for full setup guide
+Setup documentation is provided separately to the client.
 
 
-## How It Works (Technical)
+## Design
 
-### Content Loading Strategy
-
-Pages have content hardcoded directly in HTML (ensures content displays immediately, even on `file://` protocol). The `cms-loader.js` script overlays updated content from `_data/` JSON files when served from a web server (GitHub Pages). On local `file://` viewing, the CMS loader skips overwriting to prevent blank pages.
-
-### Responsive Breakpoints
-
-| Breakpoint | Target |
-|------------|--------|
-| 1400px+ | Large desktop |
-| 992px–1199px | Laptop / small desktop |
-| 768px–991px | Tablet landscape |
-| 576px–767px | Tablet portrait |
-| 376px–575px | Mobile |
-| ≤375px | Small mobile (iPhone SE) |
-
-### Key Design Decisions
-
-- **Dark theme** — Forest green (#1a2e1a) + gold (#c9a84c) accent palette
+- **Dark theme** — Forest green + gold accent palette
+- **Fully responsive** — 6 breakpoints from large desktop to small mobile
 - **No build tools** — No npm, webpack, or compilation needed
-- **WhatsApp-first** — Primary contact method (fastest response for Bali tourism)
+- **WhatsApp-first** — Primary contact method for Bali tourism
 - **Pay on the day** — No online payment processing needed
-- **`.nojekyll`** — Prevents GitHub Pages Jekyll from ignoring `_data/` folder
 
 
 ## Deployment
 
-The site deploys automatically via GitHub Pages whenever changes are pushed to the `main` branch.
-
-### To push changes from VS Code:
-
-1. Open the repo folder in VS Code
-2. Make changes to files
-3. Source Control panel (Ctrl+Shift+G) → Stage → Commit
-4. Click "Sync Changes" or run `git push origin main`
-5. If prompted, authorize VS Code to access GitHub (one-time only)
-6. Wait 1-2 minutes for GitHub Pages to rebuild
-
-### Manual upload via GitHub.com:
-
-1. Go to the repo Code tab
-2. Click "Add file" > "Upload files"
-3. Drag files from the `Website_Live` folder
-4. Commit directly to main
+The site deploys automatically via GitHub Pages whenever changes are pushed to the `main` branch. Rebuilds take 1-2 minutes.
 
 
 ## Contact
 
-- **WhatsApp:** [+62 819 9923 5447](https://wa.me/6281999235447)
-- **Email:** baliparadisetravels@gmail.com
-- **Google Maps:** [Bali Paradise Adventure Guide](https://maps.app.goo.gl/Lucm7mpu2UtnnKXX6)
-- **Google Rating:** 4.9 stars
+Contact details are available on the live website.
 
 
 ## Credits
