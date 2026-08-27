@@ -89,97 +89,77 @@ async function loadHero() {
 async function loadTours() {
   const container = document.getElementById('tours-container');
   if (!container) return;
-  if (window.location.protocol === 'file:') return;
+  if (container.children.length > 0) return;
 
-  const originalContent = container.innerHTML;
+  const data = await fetchJSON('_data/tours.json', FALLBACK_TOURS);
+  if (!data || !data.tours || !data.tours.length) return;
 
-  try {
-    const data = await fetchJSON('_data/tours.json', FALLBACK_TOURS);
-    if (!data || !data.tours || !data.tours.length) return;
+  const whatsapp = BUSINESS ? BUSINESS.whatsapp : '6281999235447';
 
-    const whatsapp = BUSINESS ? BUSINESS.whatsapp : '6281999235447';
+  container.innerHTML = data.tours.map((tour, i) => `
+    <section class="tour-detail${i % 2 === 1 ? ' even' : ''}" id="${tour.id}">
+      <div class="container">
+        <div class="tour-detail-grid">
+          <div class="tour-detail-image fade-in">
+            <img src="${tour.image}" alt="${tour.title}" loading="lazy">
+          </div>
+          <div class="tour-detail-content fade-in">
+            <h2>${tour.title}</h2>
+            <p>${tour.description}</p>
 
-    const rendered = data.tours.map((tour, i) => `
-      <section class="tour-detail${i % 2 === 1 ? ' even' : ''}" id="${tour.id}">
-        <div class="container">
-          <div class="tour-detail-grid">
-            <div class="tour-detail-image fade-in">
-              <img src="${tour.image}" alt="${tour.title}" loading="lazy">
+            <div class="itinerary">
+              ${(tour.itinerary || []).map(item => `
+                <div class="itinerary-item">
+                  <span class="itinerary-time">${item.time}</span>
+                  <span class="itinerary-activity">${item.activity}</span>
+                </div>
+              `).join('')}
             </div>
-            <div class="tour-detail-content fade-in">
-              <h2>${tour.title}</h2>
-              <p>${tour.description}</p>
 
-              <div class="itinerary">
-                ${(tour.itinerary || []).map(item => `
-                  <div class="itinerary-item">
-                    <span class="itinerary-time">${item.time}</span>
-                    <span class="itinerary-activity">${item.activity}</span>
-                  </div>
-                `).join('')}
-              </div>
+            <div class="inclusions">
+              ${(tour.inclusions || []).map(item => `
+                <div class="inclusion-item">
+                  <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  ${item}
+                </div>
+              `).join('')}
+            </div>
 
-              <div class="inclusions">
-                ${(tour.inclusions || []).map(item => `
-                  <div class="inclusion-item">
-                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                    ${item}
-                  </div>
-                `).join('')}
-              </div>
+            <div class="tour-pricing-box">
+              <h4>Pricing</h4>
+              ${(tour.pricing || []).map(p => `
+                <div class="price-row">
+                  <span class="price-label">${p.label}</span>
+                  <span class="price-value">${p.value}</span>
+                </div>
+              `).join('')}
+            </div>
 
-              <div class="tour-pricing-box">
-                <h4>Pricing</h4>
-                ${(tour.pricing || []).map(p => `
-                  <div class="price-row">
-                    <span class="price-label">${p.label}</span>
-                    <span class="price-value">${p.value}</span>
-                  </div>
-                `).join('')}
-              </div>
-
-              <div class="tour-cta-buttons">
-                <a href="https://wa.me/${whatsapp}?text=${encodeURIComponent(tour.whatsappMessage || '')}" target="_blank" class="btn btn-whatsapp">Book via WhatsApp</a>
-                <a href="contact.html" class="btn btn-outline">Send Enquiry</a>
-              </div>
+            <div class="tour-cta-buttons">
+              <a href="https://wa.me/${whatsapp}?text=${encodeURIComponent(tour.whatsappMessage || '')}" target="_blank" class="btn btn-whatsapp">Book via WhatsApp</a>
+              <a href="contact.html" class="btn btn-outline">Send Enquiry</a>
             </div>
           </div>
         </div>
-      </section>
-    `).join('');
-
-    if (rendered && rendered.trim().length > 0) {
-      container.innerHTML = rendered;
-    }
-  } catch (e) {
-    container.innerHTML = originalContent;
-  }
+      </div>
+    </section>
+  `).join('');
 }
 
 async function loadGallery() {
   const container = document.getElementById('gallery-container');
   if (!container) return;
-  if (window.location.protocol === 'file:') return;
+  if (container.children.length > 0) return;
 
-  const originalContent = container.innerHTML;
+  const data = await fetchJSON('_data/gallery.json', FALLBACK_GALLERY);
+  if (!data || !data.photos || !data.photos.length) return;
 
-  try {
-    const data = await fetchJSON('_data/gallery.json', FALLBACK_GALLERY);
-    if (!data || !data.photos || !data.photos.length) return;
-
-    const rendered = data.photos.map(photo => `
-      <div class="gallery-item fade-in" data-category="${photo.category || 'all'}">
-        <img src="${photo.src}" alt="${photo.caption || 'Gallery photo'}" loading="lazy">
-        <div class="caption">${photo.caption || ''}</div>
-      </div>
-    `).join('');
-
-    if (rendered && rendered.trim().length > 0) {
-      container.innerHTML = rendered;
-    }
-  } catch (e) {
-    container.innerHTML = originalContent;
-  }
+  container.innerHTML = data.photos.map(photo => `
+    <div class="gallery-item fade-in" data-category="${photo.category || 'all'}">
+      <img src="${photo.src}" alt="${photo.caption || 'Gallery photo'}" loading="lazy">
+      <div class="caption">${photo.caption || ''}</div>
+    </div>
+  `).join('');
 
   initGalleryFilters();
   initLightbox();
