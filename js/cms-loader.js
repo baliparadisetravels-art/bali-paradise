@@ -89,7 +89,7 @@ async function loadHero() {
 async function loadTours() {
   const container = document.getElementById('tours-container');
   if (!container) return;
-  if (container.children.length > 0 && window.location.protocol === 'file:') return;
+  if (container.children.length > 0) return;
 
   const data = await fetchJSON('_data/tours.json', FALLBACK_TOURS);
   if (!data.tours || !data.tours.length) return;
@@ -149,7 +149,7 @@ async function loadTours() {
 async function loadGallery() {
   const container = document.getElementById('gallery-container');
   if (!container) return;
-  if (container.children.length > 0 && window.location.protocol === 'file:') return;
+  if (container.children.length > 0) return;
 
   const data = await fetchJSON('_data/gallery.json', FALLBACK_GALLERY);
   if (!data.photos || !data.photos.length) return;
