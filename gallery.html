@@ -391,7 +391,32 @@
     <script src="js/main.js"></script>
     <script src="js/cms-loader.js"></script>
     <script>
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') document.getElementById('lightbox').style.display = 'none'; });
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category.includes(filter)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src.replace('w=600', 'w=1400');
+                lightboxImg.alt = img.alt;
+                lightbox.style.display = 'flex';
+            });
+        });
+        lightbox.addEventListener('click', () => { lightbox.style.display = 'none'; });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.style.display = 'none'; });
     </script>
 </body>
 </html>
