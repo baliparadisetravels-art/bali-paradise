@@ -4,6 +4,7 @@
    ============================== */
 
 :root {
+    color-scheme: dark;
     --bg-primary: #0f0f0f;
     --bg-secondary: #1a1a1a;
     --bg-card: #1a1a1a;
@@ -96,6 +97,7 @@ img {
 
 .navbar.scrolled {
     background: rgba(15, 15, 15, 0.95);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 12px 0;
     border-bottom: 1px solid var(--border-subtle);
@@ -493,6 +495,7 @@ img {
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.75rem;
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
 
