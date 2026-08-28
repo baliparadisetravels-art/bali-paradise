@@ -25,6 +25,7 @@ collections:
           - { label: "Profile Image", name: "profileImage", widget: "image" }
           - { label: "Calendly URL", name: "calendlyUrl", widget: "string", default: "https://calendly.com/baliparadisetravels", hint: "Your Calendly booking link" }
           - { label: "Instagram URL", name: "instagramUrl", widget: "string", required: false, hint: "Full URL e.g. https://instagram.com/yourname" }
+          - { label: "TikTok URL", name: "tiktokUrl", widget: "string", required: false, hint: "Full URL e.g. https://tiktok.com/@yourname" }
           - { label: "Facebook URL", name: "facebookUrl", widget: "string", required: false, hint: "Full URL e.g. https://facebook.com/yourpage" }
           - { label: "TripAdvisor URL", name: "tripadvisorUrl", widget: "string", required: false, hint: "Full URL to your TripAdvisor listing" }
 
