@@ -1,4 +1,4 @@
-backend:
+﻿backend:
   name: github
   repo: baliparadisetravels-art/bali-paradise
   branch: main
@@ -36,7 +36,7 @@ collections:
         label: "About Page Content"
         file: "_data/about.json"
         fields:
-          - { label: "Heading", name: "title", widget: "string", default: "Hi, I'm Kadek One" }
+          - { label: "Heading", name: "title", widget: "string", default: "Hi, I'm Kadek Wan" }
           - label: "Bio Paragraphs"
             name: "bio"
             widget: "list"
