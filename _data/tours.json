@@ -203,11 +203,11 @@
       "pricing": [
         {
           "label": "Single rider",
-          "value": "IDR 1,200,000"
+          "value": "IDR 675,000"
         },
         {
           "label": "Tandem (2 on 1 ATV)",
-          "value": "IDR 1,450,000"
+          "value": "IDR 750,000"
         }
       ],
       "itinerary": [
@@ -252,7 +252,7 @@
       ],
       "title": "ATV / Quad Bike Adventure",
       "id": "atv",
-      "image": "images/atv-quad-bike.jpg",
+      "image": "images/atv-quard-bike.jpg",
       "difficulty": "Moderate",
       "description": "Rev up and ride through Bali's untouched countryside. Navigate rice paddies, bamboo forests, river crossings, and remote villages on a powerful ATV — an adrenaline rush like no other."
     },
