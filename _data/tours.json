@@ -4,11 +4,11 @@
       "pricing": [
         {
           "label": "Per person (min 2)",
-          "value": "IDR 425,000"
+          "value": "IDR 425,000 or Contact Us"
         },
         {
           "label": "Solo traveller",
-          "value": "IDR 600,000"
+          "value": "IDR 600,000 or Contact Us"
         }
       ],
       "itinerary": [
@@ -66,20 +66,20 @@
       "pricing": [
         {
           "label": "Transport + Guide only (min 2 pax)",
-          "value": "IDR 325,000"
+          "value": "IDR 325,000 or Contact Us"
         },
         {
           "label": "All-Inclusive with tickets (min 2 pax)",
-          "value": "IDR 550,000"
+          "value": "IDR 550,000 or Contact Us"
         },
         {
           "label": "Solo traveller surcharge",
-          "value": "IDR 725,000"
+          "value": "IDR 725,000 or Contact Us"
         }
       ],
       "itinerary": [
         {
-          "time": "Pick up  8:00 AM or 9:00 AM From Hotel",
+          "time": "8:00 AM or 9:00 AM",
           "activity": "Sacred Monkey Forest (temples & macaques)"
         },
         {
@@ -157,7 +157,7 @@
       "pricing": [
         {
           "label": "Per person (min 2 pax)",
-          "value": "IDR 550,000"
+          "value": "IDR 550,000 or Contact Us"
         }
       ],
       "itinerary": [
@@ -203,11 +203,11 @@
       "pricing": [
         {
           "label": "Single rider",
-          "value": "IDR 675,000"
+          "value": "IDR 675,000 or Contact Us"
         },
         {
           "label": "Tandem (2 on 1 ATV)",
-          "value": "IDR 750,000"
+          "value": "IDR 750,000 or Contact Us"
         }
       ],
       "itinerary": [
@@ -260,15 +260,15 @@
       "pricing": [
         {
           "label": "Per person (min 2 pax, tickets NOT included)",
-          "value": "IDR 375,000"
+          "value": "IDR 375,000 or Contact Us"
         },
         {
           "label": "Solo traveller surcharge",
-          "value": "+IDR 200,000"
+          "value": "+IDR 200,000 or Contact Us"
         },
         {
           "label": "Pickup outside Ubud",
-          "value": "+IDR 200,000"
+          "value": "+IDR 200,000 or Contact Us"
         }
       ],
       "itinerary": [
